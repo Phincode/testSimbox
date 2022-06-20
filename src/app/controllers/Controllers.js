@@ -10,6 +10,7 @@ var userModel=require('./../models/userModel');
 var user=require('./../models/user');
 
 
+
 exports.testController=(req,res,next)=>{
     res.status(200).json({
      app_state:"ready"
@@ -166,4 +167,6 @@ exports.mtnCallBack=(req,res)=>{
   console.log("MTN CALL BACK"+req.body);
   return  res.json("ok");
 }
+
+
 //FUTURhokage@13.
