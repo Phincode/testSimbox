@@ -14,6 +14,7 @@
   "author": "phincode",
   "license": "MIT",
   "dependencies": {
+    "@westh/serial-commander": "^1.2.2",
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -25,7 +26,6 @@
     "node-sms-transceiver": "^0.0.1",
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
-    "serial-at": "^0.0.3",
     "uuid": "^8.3.2"
   }
 }
