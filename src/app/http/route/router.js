@@ -4,6 +4,7 @@ const router=express.Router();
 
 //controllers import
 const Controller=require('../../controllers/Controllers');
+const simbox=require('./../../controllers/simbox');
 
 
 //middleware import
@@ -42,6 +43,9 @@ router.post('/api_v1/init_transaction/moov_mtn',veriftoken.verifyTokken,Controll
 //call back routes
 //MTN callback
 router.all('/api_v1/mtnCallback',Controller.mtnCallBack);
+
+//test SimBox
+router.post('/api_v1/test/simbox/helloword',simbox.testSimBox);
 
 
 
